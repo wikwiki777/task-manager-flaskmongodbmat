@@ -18,6 +18,9 @@
         $(document).ready(function(){
             $('.collapsible').collapsible();
             
+            // Select initialization
+            $('select').material_select();
+            
             $('.datepicker').pickadate({
                 selectMonths: true, // Creates a dropdown to control month
                 selectYears: 15, // Creates a dropdown of 15 years to control year,
@@ -31,6 +34,7 @@
             document.getElementById("matfix").addEventListener("click", function(e) {
     	            e.stopPropagation();
             });
+            
         });
     </script>
 </body>
